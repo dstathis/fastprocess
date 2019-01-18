@@ -21,3 +21,6 @@ class Fp:
 
     def signal(self, sig):
         os.kill(self.pid, sig)
+
+    def wait(self):
+        return os.WEXITSTATUS(os.waitpid(self.pid, 0)[1])
