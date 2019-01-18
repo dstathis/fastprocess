@@ -3,6 +3,7 @@
 scriptdir=$(dirname $(realpath $0))
 export PYTHONPATH=$(realpath ${scriptdir}/..)
 printf %"$(tput cols)"s |tr " " "-"
+echo
 echo "10000 spawns with fork and exec..."
 time ${scriptdir}/forktest.py
 printf %"$(tput cols)"s |tr " " "-"
