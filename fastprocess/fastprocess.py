@@ -1,7 +1,7 @@
 import os
 import signal
 
-class Fp:
+class FastProcess:
     def __init__(self, cmd, stdin=None, stdout=None, stderr=None):
         self.pid = os.fork()
         if self.pid == 0:

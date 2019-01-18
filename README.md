@@ -4,20 +4,20 @@ A fast subprocess library
 ## Usage
 Spawning a process with fastprocess is very easy
 ```
-In [1]: from fastprocess import Fp                                                                       
+In [1]: from fastprocess import FastProcess
 
-In [2]: pid = Fp(['echo', 'hello', 'world'])                                                             
+In [2]: pid = FastProcess(['echo', 'hello', 'world'])
 
 hello world
-In [3]: pid.wait()                                                                                       
+In [3]: pid.wait()
 Out[3]: 0
 
 ```
 You can redirect io using the stdin, stdout, and stderr options
 ```
-In [4]: null = open('/dev/null', 'w')                                                                    
+In [4]: null = open('/dev/null', 'w')
 
-In [5]: pid = Fp(['yes'], stdout=null)                                                                   
+In [5]: pid = FastProcess(['yes'], stdout=null)
 
 In [6]: pid.terminate()
 ```

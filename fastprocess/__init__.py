@@ -1,1 +1,1 @@
-from fastprocess.fp import Fp
+from fastprocess.fastprocess import FastProcess
