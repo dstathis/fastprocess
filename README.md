@@ -22,7 +22,7 @@ In [5]: pid = FastProcess(['yes'], stdout=null)
 In [6]: pid.terminate()
 ```
 
-## Fp methods
+## FastProcess methods
 terminate():  
 Sends SIGTERM to the process
 
