@@ -1,3 +1,5 @@
+WARNING: This library is unsafe to use until python 3.8 is released due to deadlock issues with fork().
+
 # Fastprocess
 A fast subprocess library
 
