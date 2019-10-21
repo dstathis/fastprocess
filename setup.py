@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='fastprocess',
-    version='1.0.0',
+    version='1.0.1',
     author='Dylan Stephano-Shachter',
     author_email='dstephanoshachter@gmail.com',
     description=('A fast subprocess library'),
