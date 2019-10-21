@@ -8,11 +8,11 @@ echo "10000 spawns with fork and exec..."
 time python ${scriptdir}/forktest.py
 printf %"$(tput cols)"s |tr " " "-"
 echo
-echo "10000 spawns with fastprocess..."
+echo "10000 spawns with fastprocess (posix_spawn)..."
 time python ${scriptdir}/fptest.py
 printf %"$(tput cols)"s |tr " " "-"
 echo
-echo "10000 spawns with old fastprocess..."
+echo "10000 spawns with old fastprocess (fork/exec)..."
 time python ${scriptdir}/old_fptest.py
 printf %"$(tput cols)"s |tr " " "-"
 echo
