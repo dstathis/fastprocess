@@ -37,23 +37,29 @@ Waits for the process to exit then returns the exit code
 ## Performance
 Here are the results of running ./benchmark/bench
 ```
----------------------------------------
+---------------------------------------------------
 10000 spawns with fork and exec...
 
-real	0m2.214s
-user	0m0.083s
-sys	0m2.123s
----------------------------------------
-10000 spawns with fastprocess...
+real	0m3.021s
+user	0m0.151s
+sys	0m1.420s
+---------------------------------------------------
+10000 spawns with fastprocess (posix_spawn)...
 
-real	0m3.163s
-user	0m0.383s
-sys	0m2.772s
----------------------------------------
+real	0m3.240s
+user	0m1.746s
+sys	0m0.265s
+---------------------------------------------------
+10000 spawns with old fastprocess (fork/exec)...
+
+real	0m3.624s
+user	0m0.863s
+sys	0m2.738s
+---------------------------------------------------
 10000 spawns with subprocess...
 
-real	0m11.110s
-user	0m6.773s
-sys	0m7.772s
----------------------------------------
+real	0m10.873s
+user	0m4.902s
+sys	0m9.480s
+---------------------------------------------------
 ```
