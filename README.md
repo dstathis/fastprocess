@@ -40,26 +40,20 @@ Here are the results of running ./benchmark/bench
 ---------------------------------------------------
 10000 spawns with fork and exec...
 
-real	0m2.181s
-user	0m0.116s
-sys	0m2.056s
+real	0m2.157s
+user	0m0.048s
+sys	0m2.104s
 ---------------------------------------------------
-10000 spawns with fastprocess (posix_spawn)...
+10000 spawns with fastprocess...
 
-real	0m2.587s
-user	0m1.150s
-sys	0m0.438s
----------------------------------------------------
-10000 spawns with old fastprocess (fork/exec)...
-
-real	0m3.668s
-user	0m0.440s
-sys	0m3.223s
+real	0m2.598s
+user	0m1.225s
+sys	0m0.356s
 ---------------------------------------------------
 10000 spawns with subprocess...
 
-real	0m12.134s
-user	0m7.768s
-sys	0m9.108s
+real	0m12.211s
+user	0m7.832s
+sys	0m9.072s
 ---------------------------------------------------
 ```

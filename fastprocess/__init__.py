@@ -1,1 +1,1 @@
-from fastprocess.fastprocess import FastProcess, OldFastProcess
+from fastprocess.fastprocess import FastProcess
