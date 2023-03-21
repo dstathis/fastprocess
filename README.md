@@ -1,5 +1,3 @@
-WARNING: This library requires python 3.8
-
 # Fastprocess
 A fast subprocess library
 
