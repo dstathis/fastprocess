@@ -1,5 +1,5 @@
 fastprocess/__pycache__/
 build
-venv
 dist
 *.egg-info
+.venv

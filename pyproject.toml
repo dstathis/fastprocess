@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+dynamic = ["version"]
+name = "fastprocess"
+authors = [
+  {name = "Dylan Stephano-Shachter", email = "dylan@theone.ninja"}
+]
+description = "A fast subprocess library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python",
+  "Operating System :: POSIX",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+  "Development Status :: 4 - Beta",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+homepage = "https://github.com/dstathis/fastprocess"
+issues = "https://github.com/dstathis/fastprocess/issues"
+
+
+[tool.hatch.version]
+path = "fastprocess/__init__.py"
