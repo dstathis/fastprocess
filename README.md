@@ -3,6 +3,7 @@ A fast subprocess library
 
 > [!NOTE]
 > This library is no longer maintained.
+>
 > Modern versions of subprocess are very close to as fast as this library, so just use that :)
 
 ## Usage
