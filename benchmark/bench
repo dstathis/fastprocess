@@ -5,13 +5,13 @@ export PYTHONPATH=$(realpath ${scriptdir}/..)
 printf %"$(tput cols)"s |tr " " "-"
 echo
 echo "10000 spawns with fork and exec..."
-time python ${scriptdir}/forktest.py
+time python3 ${scriptdir}/forktest.py
 printf %"$(tput cols)"s |tr " " "-"
 echo
 echo "10000 spawns with fastprocess..."
-time python ${scriptdir}/fptest.py
+time python3 ${scriptdir}/fptest.py
 printf %"$(tput cols)"s |tr " " "-"
 echo
 echo "10000 spawns with subprocess..."
-time python ${scriptdir}/sptest.py
+time python3 ${scriptdir}/sptest.py
 printf %"$(tput cols)"s |tr " " "-"
